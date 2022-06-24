@@ -24,7 +24,7 @@ function baseApi(method, endpoint, payload) {
         try {
             let res;
             const url = exports.BASE_URL + endpoint;
-            const config = { data: payload };
+            const config = payload;
             if (method === "GET")
                 res = yield axios_1.default.get(url);
             if (method === "POST")

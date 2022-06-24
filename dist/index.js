@@ -27,3 +27,36 @@ var updateCreditCard_1 = require("./updateCreditCard");
 Object.defineProperty(exports, "updateCreditCard", { enumerable: true, get: function () { return updateCreditCard_1.default; } });
 var uploadTradeDocument_1 = require("./uploadTradeDocument");
 Object.defineProperty(exports, "uploadTradedocument", { enumerable: true, get: function () { return uploadTradeDocument_1.default; } });
+/*
+import createParty from "./createParty"
+import { CreatePartyRequest, CreatePartyResponse } from "./createParty/types";
+import { Domicile } from "./createParty/enums";
+
+const config = {
+    clientID: "3xVuKF2i046gGga",
+    developerAPIKey: "2r4WSiXgcwaraggdMGTL6GjiE8aKSkNpmuh"
+};
+
+const payload: CreatePartyRequest = {
+  clientID: "3xVuKF2i046gGga",
+  developerAPIKey: "2r4WSiXgcwaraggdMGTL6GjiE8aKSkNpmuh",
+  domicile: Domicile.US_CITIZEN,
+  firstName: "Bill",
+  lastName: "Brown",
+  dob: "01-03-1950",
+  primCountry: "USA",
+  primAddress1: "45 Brackett St",
+  primAddress2: "Apt 1",
+  primCity: "Portland",
+  primState: "ME",
+  primZip: "04101",
+  emailAddress: "wpbrown@gmail.com",
+};
+
+let test = async function() {
+    const res = await createParty(payload);
+    console.log(res);
+}
+
+test();
+*/ 

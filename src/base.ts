@@ -17,7 +17,7 @@ export async function baseApi<Payload, Response>(
   try {
     let res: AxiosResponse<Response>;
     const url = BASE_URL + endpoint;
-    const config: AxiosRequestConfig<Payload> = { data: payload };
+    const config: AxiosRequestConfig<Payload> = payload;
     if (method === "GET") res = await axios.get(url);
     if (method === "POST") res = await axios.post(url, config);
     if (method === "PUT") res = await axios.put(url, config);

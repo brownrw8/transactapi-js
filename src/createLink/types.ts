@@ -14,7 +14,7 @@ export interface CreateLinkRequest {
   relatedEntry: string;
   linkType: LinkType;
   notes: string;
-  primary_value: int;
+  primary_value: string;
 }
 
 export interface CreateLinkResponse {

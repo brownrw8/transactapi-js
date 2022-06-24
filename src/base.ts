@@ -23,6 +23,7 @@ export async function baseApi<Payload, Response>(
     if (method === "PUT") res = await axios.put(url, config);
     return res.data;
   } catch (error) {
+    console.log(error)
     throw new Error(error.message);
   }
 }

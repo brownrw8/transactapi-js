@@ -58,7 +58,7 @@ function default_1({ clientID, developerAPIKey, accountRegistration, type, entit
                 payload.entityType = entityType;
             if (streetAddress2)
                 payload.streetAddress2 = streetAddress2;
-            return yield (0, base_1.baseApi)("POST", "createAccount", payload);
+            return yield (0, base_1.baseApi)("PUT", "createAccount", payload);
         }
         catch (error) {
             throw new Error(error.message);

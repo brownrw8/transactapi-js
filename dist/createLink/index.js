@@ -37,7 +37,7 @@ function default_1({ clientID, developerAPIKey, firstEntryType, firstEntry, rela
                 notes,
                 primary_value
             };
-            return yield (0, base_1.baseApi)("POST", "createLink", payload);
+            return yield (0, base_1.baseApi)("PUT", "createLink", payload);
         }
         catch (error) {
             throw new Error(error.message);

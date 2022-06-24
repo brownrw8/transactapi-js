@@ -37,7 +37,7 @@ export default async function ({
       notes,
       primary_value
     };
-    return await baseApi("POST", "createLink", payload);
+    return await baseApi("PUT", "createLink", payload);
   } catch (error) {
     throw new Error(error.message);
   }

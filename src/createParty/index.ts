@@ -51,7 +51,7 @@ export default async function ({
         primZip,
         emailAddress,
     };
-    return await baseApi("POST", "createParty", payload);
+    return await baseApi("PUT", "createParty", payload);
   } catch (error) {
     throw new Error(error.message);
   }

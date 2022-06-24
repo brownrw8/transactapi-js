@@ -45,7 +45,7 @@ function default_1({ clientID, developerAPIKey, domicile, firstName, lastName, d
                 primZip,
                 emailAddress,
             };
-            return yield (0, base_1.baseApi)("POST", "createParty", payload);
+            return yield (0, base_1.baseApi)("PUT", "createParty", payload);
         }
         catch (error) {
             throw new Error(error.message);

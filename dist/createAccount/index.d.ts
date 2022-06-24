@@ -23,4 +23,4 @@ import { CreateAccountRequest, CreateAccountResponse } from "./types";
  * @returns {string} statusDesc - API Status Description
  * @returns {string} accountId - Unique identifier code for the Account
  */
-export default function ({ clientID, developerAPIKey, accountRegistration, type, entityType, domesticYN, streetAddress1, streetAddress2, city, state, zip, country, phone, KYCstatus, AMLstatus, AccreditedStatus, ApprovalStatus, }: CreateAccountRequest): Promise<CreateAccountResponse>;
+export default function ({ clientID, developerAPIKey, accountRegistration, type, entityType, domesticYN, streetAddress1, streetAddress2, city, state, zip, country, phone, KYCstatus, AMLstatus, AccreditedStatus, approvalStatus, }: CreateAccountRequest): Promise<CreateAccountResponse>;

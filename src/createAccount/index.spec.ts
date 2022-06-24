@@ -30,7 +30,7 @@ describe("/createTrade endpoint", () => {
       KYCstatus: KycStatus.PENDING,
       AMLstatus: AmlStatus.PENDING,
       AccreditedStatus: AccreditedStatus.PENDING,
-      ApprovalStatus: ApprovalStatus.PENDING,
+      approvalStatus: ApprovalStatus.PENDING,
     };
     const response: CreateAccountResponse = {
       statusCode: "101",

@@ -25,7 +25,7 @@ export interface CreateAccountRequest {
   KYCstatus: KycStatus;
   AMLstatus: AmlStatus;
   AccreditedStatus: AccreditedStatus;
-  ApprovalStatus: ApprovalStatus;
+  approvalStatus: ApprovalStatus;
 }
 
 export interface CreateAccountResponse {

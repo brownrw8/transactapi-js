@@ -43,7 +43,7 @@ export default async function ({
   KYCstatus,
   AMLstatus,
   AccreditedStatus,
-  ApprovalStatus,
+  approvalStatus,
 }: CreateAccountRequest): Promise<CreateAccountResponse> {
   try {
     const payload: CreateAccountRequest = {
@@ -61,7 +61,7 @@ export default async function ({
       KYCstatus,
       AMLstatus,
       AccreditedStatus,
-      ApprovalStatus,
+      approvalStatus,
     };
     if (type === AccountType.ENTITY) payload.entityType = entityType;
     if (streetAddress2) payload.streetAddress2 = streetAddress2;

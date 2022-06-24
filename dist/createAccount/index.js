@@ -34,7 +34,7 @@ const base_1 = require("../base");
  * @returns {string} statusDesc - API Status Description
  * @returns {string} accountId - Unique identifier code for the Account
  */
-function default_1({ clientID, developerAPIKey, accountRegistration, type, entityType, domesticYN, streetAddress1, streetAddress2, city, state, zip, country, phone, KYCstatus, AMLstatus, AccreditedStatus, ApprovalStatus, }) {
+function default_1({ clientID, developerAPIKey, accountRegistration, type, entityType, domesticYN, streetAddress1, streetAddress2, city, state, zip, country, phone, KYCstatus, AMLstatus, AccreditedStatus, approvalStatus, }) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const payload = {
@@ -52,7 +52,7 @@ function default_1({ clientID, developerAPIKey, accountRegistration, type, entit
                 KYCstatus,
                 AMLstatus,
                 AccreditedStatus,
-                ApprovalStatus,
+                approvalStatus,
             };
             if (type === "Entity" /* ENTITY */)
                 payload.entityType = entityType;

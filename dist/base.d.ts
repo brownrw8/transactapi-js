@@ -1,5 +1,5 @@
 import { Method } from "axios";
-export declare const BASE_URL = "https://api.norcapsecurities.com/tapiv3/index.php/v3/";
+export declare const BASE_URL = "https://api-sandboxdash.norcapsecurities.com/tapiv3/index.php/v3/";
 /**
  * Base API call to Transact API
  * @param {string} method - HTTP method

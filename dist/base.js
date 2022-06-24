@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.baseApi = exports.BASE_URL = void 0;
 const axios_1 = require("axios");
-exports.BASE_URL = "https://api.norcapsecurities.com/tapiv3/index.php/v3/";
+exports.BASE_URL = "https://api-sandboxdash.norcapsecurities.com/tapiv3/index.php/v3/";
 /**
  * Base API call to Transact API
  * @param {string} method - HTTP method
@@ -34,6 +34,7 @@ function baseApi(method, endpoint, payload) {
             return res.data;
         }
         catch (error) {
+            console.log(error);
             throw new Error(error.message);
         }
     });

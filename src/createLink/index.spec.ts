@@ -31,7 +31,7 @@ describe("/createLink endpoint", () => {
         },
       ],
     };
-    mockedAxios.post.mockResolvedValue({ data: response });
+    mockedAxios.put.mockResolvedValue({ data: response });
     const mockedResponse = await createLink(payload);
     expect(mockedResponse).toEqual(response);
     expect(mockedResponse.linkDetails[0].linkId).not.toBeNull();

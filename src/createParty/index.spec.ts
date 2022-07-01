@@ -36,7 +36,7 @@ describe("/createParty endpoint", () => {
         },
       ],
     };
-    mockedAxios.post.mockResolvedValue({ data: response });
+    mockedAxios.put.mockResolvedValue({ data: response });
     const mockedResponse = await createParty(payload);
     expect(mockedResponse).toEqual(response);
     expect(mockedResponse.partyDetails[0].partyId).not.toBeNull();

@@ -13,7 +13,7 @@ import { CreateAccountRequest, CreateAccountResponse } from "./types";
 jest.mock("axios");
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 
-describe("/createTrade endpoint", () => {
+describe("/createAccount endpoint", () => {
   test("trade creation successful", async () => {
     const payload: CreateAccountRequest = {
       clientID: "someclientid",
@@ -41,7 +41,7 @@ describe("/createTrade endpoint", () => {
         },
       ],
     };
-    mockedAxios.post.mockResolvedValue({ data: response });
+    mockedAxios.put.mockResolvedValue({ data: response });
     const mockedResponse = await createAccount(payload);
     expect(mockedResponse).toEqual(response);
     expect(mockedResponse.accountDetails[0].accountId).not.toBeNull();

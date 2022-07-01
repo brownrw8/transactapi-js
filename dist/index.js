@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.uploadTradedocument = exports.updateCreditCard = exports.performKycAmlBasic = exports.performKycAml = exports.getParty = exports.getOffering = exports.getAllTrades = exports.getAccount = exports.externalFundMove = exports.createAccount = exports.createTrade = exports.createLink = exports.createParty = exports.createExternalAccount = exports.ccFundMove = exports.addCreditCard = void 0;
+exports.uploadTradedocument = exports.updateCreditCard = exports.performKycAmlBasic = exports.performKycAml = exports.getParty = exports.getOffering = exports.getAllTrades = exports.getAccount = exports.linkExternalAccount = exports.externalFundMove = exports.createAccount = exports.createTrade = exports.createLink = exports.createParty = exports.createExternalAccount = exports.ccFundMove = exports.addCreditCard = void 0;
 var addCreditCard_1 = require("./addCreditCard");
 Object.defineProperty(exports, "addCreditCard", { enumerable: true, get: function () { return addCreditCard_1.default; } });
 var ccFundMove_1 = require("./ccFundMove");
@@ -17,6 +17,8 @@ var createAccount_1 = require("./createAccount");
 Object.defineProperty(exports, "createAccount", { enumerable: true, get: function () { return createAccount_1.default; } });
 var externalFundMove_1 = require("./externalFundMove");
 Object.defineProperty(exports, "externalFundMove", { enumerable: true, get: function () { return externalFundMove_1.default; } });
+var linkExternalAccount_1 = require("./linkExternalAccount");
+Object.defineProperty(exports, "linkExternalAccount", { enumerable: true, get: function () { return linkExternalAccount_1.default; } });
 var getAccount_1 = require("./getAccount");
 Object.defineProperty(exports, "getAccount", { enumerable: true, get: function () { return getAccount_1.default; } });
 var getAllTrades_1 = require("./getAllTrades");

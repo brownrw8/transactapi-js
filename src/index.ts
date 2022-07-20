@@ -13,5 +13,6 @@ export { default as getOffering } from "./getOffering";
 export { default as getParty } from "./getParty";
 export { default as performKycAml } from "./performKycAml";
 export { default as performKycAmlBasic } from "./performKycAmlBasic";
+export { default as updateParty } from "./updateParty";
 export { default as updateCreditCard } from "./updateCreditCard";
 export { default as uploadTradedocument } from "./uploadTradeDocument";

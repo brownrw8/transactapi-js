@@ -38,7 +38,7 @@ export default async function ({
       transactionUnits,
       createdIpAddress
     };
-    return await baseApi("POST", "getAccount", payload);
+    return await baseApi("POST", "createTrade", payload);
   } catch (error) {
     throw new Error(error.message);
   }

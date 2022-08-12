@@ -10,6 +10,7 @@ import { CreateTradeRequest, CreateTradeResponse } from "./types";
  * @param {string} accountId - Account ID of the account that is investing (This account should have one Primary Party)
  * @param {string} transactionType - ACH, WIRE, CHECK, or CREDITCARD
  * @param {string} transactionUnits - Number of units/shares to be purchased.
+ * @param {string} createdIpAddress - Requested IP Address
  * @returns {string} statusCode - API Status Code
  * @returns {string} statusDesc - API Status Description
  * @returns {string} tradeId - identifier, generated for this transaction
@@ -25,6 +26,7 @@ export default async function ({
   offeringId,
   transactionType,
   transactionUnits,
+  createdIpAddress
 }: CreateTradeRequest): Promise<CreateTradeResponse> {
   try {
     const payload: CreateTradeRequest = {
@@ -34,6 +36,7 @@ export default async function ({
       offeringId,
       transactionType,
       transactionUnits,
+      createdIpAddress
     };
     return await baseApi("POST", "getAccount", payload);
   } catch (error) {

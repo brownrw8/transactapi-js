@@ -7,6 +7,7 @@ export interface CreateTradeRequest {
   accountId: string;
   transactionType: TransactionType;
   transactionUnits: number;
+  createdIpAddress: string;
 }
 
 export interface CreateTradeResponse {

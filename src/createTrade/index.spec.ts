@@ -14,6 +14,7 @@ describe("/createTrade endpoint", () => {
       accountId: "A12345",
       transactionType: "CREDITCARD",
       transactionUnits: 100,
+      createdIpAddress: '10.0.0.1'
     };
     const response: CreateTradeResponse = {
       statusCode: "101",

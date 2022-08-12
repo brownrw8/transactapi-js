@@ -19,6 +19,7 @@ const base_1 = require("../base");
  * @param {string} accountId - Account ID of the account that is investing (This account should have one Primary Party)
  * @param {string} transactionType - ACH, WIRE, CHECK, or CREDITCARD
  * @param {string} transactionUnits - Number of units/shares to be purchased.
+ * @param {string} createdIpAddress - Requested IP Address
  * @returns {string} statusCode - API Status Code
  * @returns {string} statusDesc - API Status Description
  * @returns {string} tradeId - identifier, generated for this transaction
@@ -27,7 +28,7 @@ const base_1 = require("../base");
  * @returns {string} transactionDate - date this trade is created
  * @returns {string} transactionStatus - progress of the trade
  */
-function default_1({ clientID, developerAPIKey, accountId, offeringId, transactionType, transactionUnits, }) {
+function default_1({ clientID, developerAPIKey, accountId, offeringId, transactionType, transactionUnits, createdIpAddress }) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const payload = {
@@ -37,6 +38,7 @@ function default_1({ clientID, developerAPIKey, accountId, offeringId, transacti
                 offeringId,
                 transactionType,
                 transactionUnits,
+                createdIpAddress
             };
             return yield (0, base_1.baseApi)("POST", "getAccount", payload);
         }

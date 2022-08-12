@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.uploadTradedocument = exports.updateCreditCard = exports.performKycAmlBasic = exports.performKycAml = exports.getParty = exports.getOffering = exports.getAllTrades = exports.getAccount = exports.linkExternalAccount = exports.externalFundMove = exports.createAccount = exports.createTrade = exports.createLink = exports.createParty = exports.createExternalAccount = exports.ccFundMove = exports.addCreditCard = void 0;
+exports.uploadTradedocument = exports.updateCreditCard = exports.updateParty = exports.performKycAmlBasic = exports.performKycAml = exports.getParty = exports.getOffering = exports.getAllTrades = exports.getAccount = exports.linkExternalAccount = exports.externalFundMove = exports.createAccount = exports.createTrade = exports.createLink = exports.createParty = exports.createExternalAccount = exports.ccFundMove = exports.addCreditCard = void 0;
 var addCreditCard_1 = require("./addCreditCard");
 Object.defineProperty(exports, "addCreditCard", { enumerable: true, get: function () { return addCreditCard_1.default; } });
 var ccFundMove_1 = require("./ccFundMove");
@@ -31,6 +31,8 @@ var performKycAml_1 = require("./performKycAml");
 Object.defineProperty(exports, "performKycAml", { enumerable: true, get: function () { return performKycAml_1.default; } });
 var performKycAmlBasic_1 = require("./performKycAmlBasic");
 Object.defineProperty(exports, "performKycAmlBasic", { enumerable: true, get: function () { return performKycAmlBasic_1.default; } });
+var updateParty_1 = require("./updateParty");
+Object.defineProperty(exports, "updateParty", { enumerable: true, get: function () { return updateParty_1.default; } });
 var updateCreditCard_1 = require("./updateCreditCard");
 Object.defineProperty(exports, "updateCreditCard", { enumerable: true, get: function () { return updateCreditCard_1.default; } });
 var uploadTradeDocument_1 = require("./uploadTradeDocument");

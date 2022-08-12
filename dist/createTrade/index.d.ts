@@ -8,6 +8,7 @@ import { CreateTradeRequest, CreateTradeResponse } from "./types";
  * @param {string} accountId - Account ID of the account that is investing (This account should have one Primary Party)
  * @param {string} transactionType - ACH, WIRE, CHECK, or CREDITCARD
  * @param {string} transactionUnits - Number of units/shares to be purchased.
+ * @param {string} createdIpAddress - Requested IP Address
  * @returns {string} statusCode - API Status Code
  * @returns {string} statusDesc - API Status Description
  * @returns {string} tradeId - identifier, generated for this transaction
@@ -16,4 +17,4 @@ import { CreateTradeRequest, CreateTradeResponse } from "./types";
  * @returns {string} transactionDate - date this trade is created
  * @returns {string} transactionStatus - progress of the trade
  */
-export default function ({ clientID, developerAPIKey, accountId, offeringId, transactionType, transactionUnits, }: CreateTradeRequest): Promise<CreateTradeResponse>;
+export default function ({ clientID, developerAPIKey, accountId, offeringId, transactionType, transactionUnits, createdIpAddress }: CreateTradeRequest): Promise<CreateTradeResponse>;

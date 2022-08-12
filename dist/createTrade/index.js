@@ -40,7 +40,7 @@ function default_1({ clientID, developerAPIKey, accountId, offeringId, transacti
                 transactionUnits,
                 createdIpAddress
             };
-            return yield (0, base_1.baseApi)("POST", "getAccount", payload);
+            return yield (0, base_1.baseApi)("POST", "createTrade", payload);
         }
         catch (error) {
             throw new Error(error.message);

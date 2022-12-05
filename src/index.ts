@@ -5,6 +5,7 @@ export { default as createParty } from "./createParty";
 export { default as createLink } from "./createLink";
 export { default as createTrade } from "./createTrade";
 export { default as createAccount } from "./createAccount";
+export { default as deleteTrade } from "./deleteTrade";
 export { default as externalFundMove } from "./externalFundMove";
 export { default as linkExternalAccount } from "./linkExternalAccount";
 export { default as getAccount } from "./getAccount";

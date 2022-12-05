@@ -14,7 +14,7 @@ describe("/sendSubscriptionDocument endpoint", () => {
       offeringId: "97421",
       tradeId: "7766362363632"
     };
-    const response: ExternalFundMoveResponse = {
+    const response: SendSubscriptionDocumentResponse = {
       statusCode: "101",
       statusDesc: "Ok",
       document_details: [
